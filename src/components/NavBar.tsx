@@ -1,12 +1,16 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from "@/lib/utils";
-import { GithubIcon, LinkedinIcon, ArrowRight, Menu, X } from "lucide-react";
+import { GithubIcon, LinkedinIcon, ArrowRight, Menu, X, Moon, Sun } from "lucide-react";
+import { useTheme } from './ThemeProvider';
+import { Button } from './ui/button';
+import { Toggle } from './ui/toggle';
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  const { theme, toggleTheme } = useTheme();
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -28,7 +32,9 @@ export const NavBar = () => {
     <header 
       className={cn(
         "fixed top-0 w-full transition-all duration-300 z-50 py-4",
-        isScrolled ? "bg-white/80 backdrop-blur-md shadow-sm" : "bg-transparent"
+        isScrolled ? 
+          theme === "dark" ? "bg-background/80 backdrop-blur-md shadow-sm" : "bg-white/80 backdrop-blur-md shadow-sm" 
+          : "bg-transparent"
       )}
     >
       <div className="container px-4 mx-auto flex items-center justify-between">
@@ -53,6 +59,15 @@ export const NavBar = () => {
         </nav>
         
         <div className="hidden md:flex items-center space-x-4">
+          <Toggle
+            aria-label={theme === "dark" ? "Mudar para modo claro" : "Mudar para modo escuro"}
+            pressed={theme === "dark"}
+            onPressedChange={toggleTheme}
+            className="h-9 w-9 rounded-full"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </Toggle>
+          
           <a 
             href="https://github.com" 
             target="_blank" 
@@ -85,13 +100,24 @@ export const NavBar = () => {
         </div>
         
         {/* Mobile Menu Button */}
-        <button 
-          className="md:hidden text-foreground"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
-        >
-          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="md:hidden flex items-center space-x-2">
+          <Toggle
+            aria-label={theme === "dark" ? "Mudar para modo claro" : "Mudar para modo escuro"}
+            pressed={theme === "dark"}
+            onPressedChange={toggleTheme}
+            className="h-9 w-9 rounded-full"
+          >
+            {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
+          </Toggle>
+          
+          <button 
+            className="text-foreground"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label={isMobileMenuOpen ? "Fechar menu" : "Abrir menu"}
+          >
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
       
       {/* Mobile Menu */}

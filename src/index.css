@@ -49,7 +49,7 @@
   }
 
   .dark {
-    --background: 210 50% 10%;
+    --background: 210 50% 8%; 
     --foreground: 210 50% 98%;
 
     --card: 210 50% 10%;
@@ -90,7 +90,15 @@
   }
 
   .glass-panel {
-    @apply backdrop-blur-md bg-white/30 border border-white/50 shadow-lg;
+    @apply backdrop-blur-md border shadow-lg;
+  }
+  
+  .dark .glass-panel {
+    @apply bg-white/10 border-white/20;
+  }
+  
+  :not(.dark) .glass-panel {
+    @apply bg-white/30 border-white/50;
   }
   
   .text-balance {
