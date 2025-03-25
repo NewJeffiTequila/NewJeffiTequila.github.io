@@ -8,7 +8,7 @@ const experiences = [
     company: "Raro Labs",
     period: "julho de 2022 - janeiro de 2025",
     duration: "2 anos 7 meses",
-    description: "Trabalhando no projeto de transformação digital do processo de consultoria de inovação da GAC group, ajudando a criar o projeto MyGAC, que visa melhorar a análise dos projetos de inovação usados na lei do bem pelas empresas. Migração para AWS do projeto. Criação de microserviços em NodeJS."
+    description: "Trabalhando no projeto de transformação digital do processo de consultoria de inovação da GAC group, ajudando a criar o projeto MyGAC, que visa melhorar a análise dos projetos de inovação usados na lei do bem pelas empresas. Projeto principal usa o framework codeigniter. Migração para AWS do projeto. Criação de microserviços em NodeJS. Trabalhando também no projeto LOVECRM na parte de backend com NestJS e clean arch"
   },
   {
     title: "CTO",
@@ -22,28 +22,28 @@ const experiences = [
     company: "704 Apps",
     period: "março de 2022 - julho de 2022",
     duration: "5 meses",
-    description: "Desenvolvimento de soluções back-end para aplicativos."
+    description: "Desenvolvimento de soluções back-end com PHP e NestJS para aplicativos de mobilidade urbana white label, ajuste no sistema de automação de criação dos projetos, atuando também na parte de infraestrutura com a plataforma Digital Ocean"
   },
   {
     title: "Desenvolvedor FullStack",
     company: "Geduc Soluções Tecnológicas",
     period: "julho de 2021 - março de 2022",
     duration: "9 meses",
-    description: "Desenvolvimento de soluções tecnológicas educacionais, atuando tanto no back-end quanto no front-end."
+    description: "Desenvolvimento de soluções tecnológicas educacionais, atuando tanto no back-end quanto no front-end utilizando PHP com o framework Adiant e NestJS e infrastrutura na AWS."
   },
   {
     title: "Desenvolvedor FullStack",
     company: "Gênesis Soluções Tecnológicas LTDA",
     period: "novembro de 2020 - junho de 2021",
     duration: "8 meses",
-    description: "Desenvolvimento de soluções completas para sistemas de gestão, integrando front-end e back-end."
+    description: "Desenvolvimento de soluções tecnológicas educacionais, atuando tanto no back-end quanto no front-end utilizando PHP com o framework Adiant e NestJS e infrastrutura na AWS."
   },
   {
     title: "Desenvolvedor Web",
     company: "Darsh Soluções Educativas",
     period: "julho de 2019 - abril de 2020",
     duration: "10 meses",
-    description: "Desenvolvimento de aplicações web para o setor educacional."
+    description: "Desenvolvimento de aplicações web para o setor educacional utilizando Laravel."
   }
 ];
 
@@ -111,7 +111,7 @@ const Experience = () => {
             ))}
           </div>
           
-          <div className="mt-12 text-center">
+          {/* <div className="mt-12 text-center">
             <a 
               href="#"
               className="inline-flex items-center text-primary hover:text-primary/80 font-medium transition-colors"
@@ -119,7 +119,7 @@ const Experience = () => {
               <span>Veja meu currículo completo</span>
               <ArrowUpRight size={18} className="ml-1" />
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

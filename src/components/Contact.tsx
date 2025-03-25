@@ -82,8 +82,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-base font-semibold mb-1">Email</h3>
-                    <a href="mailto:contato@jefferson.dev" className="text-foreground/70 hover:text-primary transition-colors">
-                      contato@jefferson.dev
+                    <a href="mailto:contato@jeffitequila.com" className="text-foreground/70 hover:text-primary transition-colors">
+                      contato@jeffitequila.com                    
                     </a>
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="text-base font-semibold mb-1">Localização</h3>
-                    <p className="text-foreground/70">Brasil</p>
+                    <p className="text-foreground/70">Imperatriz/MA</p>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ const Contact = () => {
                 <h3 className="text-base font-semibold mb-3">Me encontre online</h3>
                 <div className="flex space-x-4">
                   <a 
-                    href="https://linkedin.com" 
+                    href="https://www.linkedin.com/in/jefferson-costa-968310166/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-[#0077B5]/10 hover:bg-[#0077B5]/20 text-[#0077B5] p-3 rounded-lg transition-colors"
@@ -114,7 +114,7 @@ const Contact = () => {
                     <Linkedin size={20} />
                   </a>
                   <a 
-                    href="https://github.com" 
+                    href="https://github.com/NewJeffiTequila" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="bg-gray-800/10 hover:bg-gray-800/20 text-gray-800 p-3 rounded-lg transition-colors"

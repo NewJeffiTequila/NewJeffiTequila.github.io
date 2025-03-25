@@ -1,22 +1,22 @@
 import { useEffect, useRef } from "react";
 
 const backendSkills = [
-  "Node.js", "Express", "NestJS", "TypeScript", "JavaScript", "Python", 
-  "Java", "Spring Boot", "REST APIs", "GraphQL", "PHP", "Laravel"
+  "Node.js", "Express", "NestJS", "TypeScript", "JavaScript",
+  "REST APIs", "GraphQL", "PHP", "Laravel" , "CodeIgniter"
 ];
 
 const databaseSkills = [
-  "SQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", "DynamoDB", 
-  "ORM (Sequelize, TypeORM)", "Modelagem de Dados"
+  "SQL", "PostgreSQL", "MySQL", "MongoDB", "Redis", 
+  "ORM (Eloquent, TypeORM)", "Modelagem de Dados"
 ];
 
 const infrastructureSkills = [
-  "AWS", "Docker", "Kubernetes", "CI/CD", "Git", "GitHub", 
-  "Microserviços", "Serverless", "DevOps"
+  "AWS", "Docker", "CI/CD", "Git", "GitHub", 
+  "Microserviços"
 ];
 
 const frontendSkills = [
-  "HTML", "CSS", "React", "Angular", "Vue.js", "Tailwind CSS", "Bootstrap"
+  "HTML", "CSS", "Vue.js", "Tailwind CSS", "Bootstrap"
 ];
 
 const Skills = () => {

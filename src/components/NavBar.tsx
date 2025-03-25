@@ -69,7 +69,7 @@ export const NavBar = () => {
           </Toggle>
           
           <a 
-            href="https://github.com" 
+            href="https://github.com/NewJeffiTequila" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-foreground/70 hover:text-primary transition-colors"
@@ -78,7 +78,7 @@ export const NavBar = () => {
             <GithubIcon size={20} />
           </a>
           <a 
-            href="https://linkedin.com" 
+            href="https://www.linkedin.com/in/jefferson-costa-968310166/" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-foreground/70 hover:text-primary transition-colors"
