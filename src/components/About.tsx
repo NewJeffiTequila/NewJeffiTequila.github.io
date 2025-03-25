@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { Code, Server, Database, Cpu } from "lucide-react";
 
 const About = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
     const observer = new IntersectionObserver(

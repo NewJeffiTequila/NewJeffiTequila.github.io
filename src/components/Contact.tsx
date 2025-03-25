@@ -1,9 +1,8 @@
-
 import { useEffect, useRef, useState } from "react";
 import { Mail, MapPin, Send, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   const [formState, setFormState] = useState({
     name: "",
     email: "",

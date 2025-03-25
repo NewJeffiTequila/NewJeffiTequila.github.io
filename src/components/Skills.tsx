@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 
 const backendSkills = [
@@ -21,7 +20,7 @@ const frontendSkills = [
 ];
 
 const Skills = () => {
-  const sectionRef = useRef<HTMLElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
     const observer = new IntersectionObserver(

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css');
 
@@ -17,24 +16,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 50% 10%;
 
-    --primary: 210 90% 60%;
+    --primary: 330 90% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 210 50% 10%;
+    --secondary: 330 40% 96.1%;
+    --secondary-foreground: 330 50% 10%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 330 40% 96.1%;
+    --muted-foreground: 330 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 210 50% 10%;
+    --accent: 330 40% 96.1%;
+    --accent-foreground: 330 50% 10%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 330 40% 98%;
 
-    --border: 210 30% 90%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 210 90% 60%;
+    --border: 330 30% 90%;
+    --input: 330 31.8% 91.4%;
+    --ring: 330 90% 60%;
 
     --radius: 0.5rem;
 
@@ -49,33 +48,33 @@
   }
 
   .dark {
-    --background: 210 50% 8%; 
-    --foreground: 210 50% 98%;
+    --background: 330 50% 8%; 
+    --foreground: 330 50% 98%;
 
-    --card: 210 50% 10%;
-    --card-foreground: 210 50% 98%;
+    --card: 330 50% 10%;
+    --card-foreground: 330 50% 98%;
 
-    --popover: 210 50% 10%;
-    --popover-foreground: 210 50% 98%;
+    --popover: 330 50% 10%;
+    --popover-foreground: 330 50% 98%;
 
-    --primary: 210 90% 60%;
-    --primary-foreground: 210 50% 98%;
+    --primary: 330 90% 60%;
+    --primary-foreground: 330 50% 98%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 50% 98%;
+    --secondary: 330 32.6% 17.5%;
+    --secondary-foreground: 330 50% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 330 32.6% 17.5%;
+    --muted-foreground: 330 20.2% 65.1%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 50% 98%;
+    --accent: 330 32.6% 17.5%;
+    --accent-foreground: 330 50% 98%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 50% 98%;
+    --destructive-foreground: 330 50% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 330 32.6% 17.5%;
+    --input: 330 32.6% 17.5%;
+    --ring: 330 26.8% 83.9%;
   }
 }
 
